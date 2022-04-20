@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     container:{
         width: '100%',
         padding: 40,
+        paddingBottom: 10,
     },
     button:{
         // backgroundColor: 'grey',

@@ -2,20 +2,30 @@ import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
 import StyleButton from '../StyledButton'
 import styles from './styles';
-const CarItem = () => {
 
+const CarItem = (props) => {
+
+  const {productName, tagLine, tagLineCTA, image} = props;
   return (
     <View style={styles.productContainer}>
 
         <ImageBackground 
-        source={require('../../assets/meImages/aloevera.jpg')}
+        source={image}
         style={styles.image}/>
         <View style={styles.titles}>
-            <Text style={styles.title}>Aloe Vera Liquid</Text>
-            <Text style={styles.subtitle}>Starting at $13.99 USD</Text>
+            <Text style={styles.title}>{productName}</Text>
+            <Text style={styles.subtitle}>
+              {tagLine}
+              <Text style={styles.subtitleCTA}>
+                {tagLineCTA}
+                </Text>
+            </Text>
+            
         </View>
 
-        <StyleButton 
+        <View style={styles.buttonContainer}>
+
+          <StyleButton 
         type="primary" 
         title="add to cart"
         onPress={() => {
@@ -29,6 +39,18 @@ const CarItem = () => {
           console.warn("Select Quantity")
         }}
         />
+
+        <StyleButton 
+        type="secondary" 
+        title="Description"
+        onPress={() => {
+          console.warn("Please wait")
+        }}
+        />
+
+        </View>
+
+        
       </View>
   )
 }

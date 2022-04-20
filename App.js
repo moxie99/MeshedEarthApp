@@ -4,7 +4,12 @@ import CarItem from './Components/ProductItem'
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem/>
+      <CarItem
+        image={require('./assets/meImages/aloevera.jpg')}
+        productName = {"Aloe Vera Liquid"}
+        tagLine = {"Starting from"}
+        tagLineCTA={" $13 USD"} 
+      />
       <StatusBar style= "auto"/>
     </View>
   );
