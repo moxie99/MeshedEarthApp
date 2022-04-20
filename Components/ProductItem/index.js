@@ -5,7 +5,7 @@ import styles from './styles';
 
 const CarItem = (props) => {
 
-  const {productName, tagLine, tagLineCTA, image} = props;
+  const {productName, tagLine, tagLineCTA, image} = props.product;
   return (
     <View style={styles.productContainer}>
 

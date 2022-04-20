@@ -1,15 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
-import CarItem from './Components/ProductItem'
+import { StyleSheet, View } from 'react-native';
+import ProductsList from './Components/ProductsList';
+import Header from './Components/Header';
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem
-        image={require('./assets/meImages/aloevera.jpg')}
-        productName = {"Aloe Vera Liquid"}
-        tagLine = {"Starting from"}
-        tagLineCTA={" $13 USD"} 
-      />
+      <Header />
+      <ProductsList />
       <StatusBar style= "auto"/>
     </View>
   );
@@ -22,5 +19,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   }
-  
 });

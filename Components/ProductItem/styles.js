@@ -1,14 +1,14 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
     
 productContainer:{
     width: '100%',
-    height: '100%',
+    height: Dimensions.get('window').height,
 
   },
   titles: {
-    marginTop: '50%',
+    marginTop: '20%',
     alignItems: 'center',
     width: '100%',
   },
