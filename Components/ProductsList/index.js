@@ -12,6 +12,7 @@ const ProductsList = (props) => {
         <FlatList
         data={products}
         renderItem={({item}) => <ProductItem product ={item} />}
+        keyExtractor={item => item.id}
         showsVerticalScrollIndicator={false}
         snapToAlignment={'start'}
         decelerationRate={'fast'}
