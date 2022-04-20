@@ -1,5 +1,12 @@
 export default [
   {
+    id: 0,
+  productName: 'WELCOME',
+  tagLine: 'Home of Natural Products ',
+  tagLineCTA: 'Starting from $10.99 USD',
+  image: require('../../assets/meImages/firstpage.png'),
+},
+  {
     id: 1,
   productName: 'African Black Soap',
   tagLine: 'Starting From ',
