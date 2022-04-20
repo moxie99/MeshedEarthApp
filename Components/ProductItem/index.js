@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
+import StyleButton from '../StyledButton'
 import styles from './styles';
 const CarItem = () => {
 
@@ -14,6 +15,20 @@ const CarItem = () => {
             <Text style={styles.subtitle}>Starting at $13.99 USD</Text>
         </View>
 
+        <StyleButton 
+        type="primary" 
+        title="add to cart"
+        onPress={() => {
+          console.warn("Added to Cart")
+      }}
+        />
+        <StyleButton 
+        type="secondary" 
+        title="buy now"
+        onPress={() => {
+          console.warn("Select Quantity")
+        }}
+        />
       </View>
   )
 }
