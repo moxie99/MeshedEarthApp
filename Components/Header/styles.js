@@ -13,12 +13,14 @@ const styles = StyleSheet.create({
     },
     logo: {
         width: 100,
-        height: 20,
+        height: 25,
         resizeMode: 'contain'
     },
     menu: {
-        width: 20,
-        height: 20,
+        width: 25,
+        height: 25,
         resizeMode: 'contain'
     }
 });
+
+export default styles;
